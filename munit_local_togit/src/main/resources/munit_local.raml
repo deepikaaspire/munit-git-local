@@ -1,0 +1,16 @@
+#%RAML 0.8
+title: Sample API
+/munit-test:
+  displayName: Test
+  post:
+    description: Test
+    body: 
+      application/xml:
+        example: | 
+          <root>Hello world</root>
+    responses: 
+      200: 
+        body: 
+          application/xml:
+            example: | 
+                <Response>Welcome</Response>
